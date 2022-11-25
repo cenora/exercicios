@@ -11,9 +11,9 @@ número = 0
 contador = 0
 
 termo = int(input("Digite o valor de N: "))
-while(contador < termo):
-    soma = primeiro + segundo
+while(contador < termo or número <= 500):
+    número = primeiro + segundo
     segundo = primeiro
-    primeiro = soma
-    print(soma)
+    primeiro = número
+    print(número)
     contador += 1

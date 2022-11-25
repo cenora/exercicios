@@ -11,9 +11,10 @@ número = 0
 contador = 0
 
 termo = int(input("Digite o valor de N: "))
-while(contador < termo or número <= 500):
-    número = primeiro + segundo
-    segundo = primeiro
-    primeiro = número
-    print(número)
+while(contador < termo or primeiro <= 500):
+    primeiro, segundo = primeiro + segundo, primeiro
+    # número = primeiro + segundo
+    # segundo = primeiro
+    # primeiro = número
+    print(primeiro)
     contador += 1

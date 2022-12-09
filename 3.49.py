@@ -7,13 +7,11 @@ Faça um programa que mostre os n termos da Série a seguir:
 
 valor = input("Digite o valor de N: ")
 soma = 0
-contador = 0
 expressao = "S = "
 n, m = 1, 1
 
-while(contador < int(valor)):
+for numero in range(int(valor)):
     soma += float(n)/float(m)
-    contador += 1
     expressao = expressao + f"+ {str(n)}/{str(m)}"
     n += 1
     m += 2

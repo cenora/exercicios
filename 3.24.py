@@ -7,11 +7,11 @@ numeros = 0
 contador = 0
 resposta = True
 
-while(resposta):
+while (resposta):
     numeros = int(input("Informe um número: "))
     contador += 1
     soma += numeros
     resposta = input("Deseja continuar? S/N \n")
-    if(resposta != "S"):
+    if (resposta != "S"):
         break
 print(f'MÉDIA: {soma/contador}')
